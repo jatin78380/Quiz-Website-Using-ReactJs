@@ -90,10 +90,10 @@ return (
           >
             {question.option4}
           </li>
-        </ul> <button className="btn" onClick={next}>Next </button>
+        </ul> <button className="btn1" onClick={next}>Next </button>
         <div className="index">{index+1} of {data.length} questions</div></>}
         {result?<> <h2>You scored {score} out of {data.length} </h2>
-        <button onClick={tryagain}> Try Again</button> </> : <></>}
+        <button className="btn2" onClick={tryagain}> Try Again</button> </> : <></>}
        
       </div>
     </>

@@ -10,6 +10,9 @@ body{
 .opt:hover{
   color:greenyellow;
 }
-.btn:hover{
+.btn1:hover{
+  color:blue;
+}
+.btn2:hover{
   color:blue;
 }
