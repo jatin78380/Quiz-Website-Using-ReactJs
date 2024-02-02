@@ -57,8 +57,8 @@ return (
         {result?<></>: <> <h2>
           {index + 1}. {question.question}
         </h2>
-        <ul>
-          <li
+        <ul >
+          <li className="opt"
             ref={Option1}
             onClick={(e) => {
               checkAnswer(e, 1);
@@ -66,7 +66,7 @@ return (
           >
             {question.option1}
           </li>
-          <li
+          <li className="opt"
             ref={Option2}
             onClick={(e) => {
               checkAnswer(e, 2);
@@ -74,7 +74,7 @@ return (
           >
             {question.option2}
           </li>
-          <li
+          <li className="opt"
             ref={Option3}
             onClick={(e) => {
               checkAnswer(e, 3);
@@ -82,7 +82,7 @@ return (
           >
             {question.option3}
           </li>
-          <li
+          <li className="opt"
             ref={Option4}
             onClick={(e) => {
               checkAnswer(e, 4);
@@ -90,7 +90,7 @@ return (
           >
             {question.option4}
           </li>
-        </ul> <button onClick={next}>Next </button>
+        </ul> <button className="btn" onClick={next}>Next </button>
         <div className="index">{index+1} of {data.length} questions</div></>}
         {result?<> <h2>You scored {score} out of {data.length} </h2>
         <button onClick={tryagain}> Try Again</button> </> : <></>}

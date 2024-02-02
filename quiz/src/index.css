@@ -7,3 +7,9 @@ body{
   background-image: linear-gradient(#D8C7FF,#19006C);
   font-family: 'poppins' ;
 }
+.opt:hover{
+  color:greenyellow;
+}
+.btn:hover{
+  color:blue;
+}
